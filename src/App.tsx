@@ -1,5 +1,5 @@
 import "./App.css";
-import ProductMobile from "./assets/image-product-desktop.jpg";
+import ProductImage from "./assets/image-product-desktop.jpg";
 import Cart from "./assets/icon-cart.svg";
 function App() {
 	return (
@@ -7,7 +7,7 @@ function App() {
 			<div className="rounded-xl min-h-fit bg-white max-w-[350px] md:flex md:max-w-xl md:items-center">
 				<img
 					className="rounded-t-xl object-cover w-full h-[300px] md:w-1/2 md:h-full md:rounded-none md:rounded-l-lg"
-					src={ProductMobile}
+					src={ProductImage}
 					alt="Chanel Paris Gabrielle perfume"
 				/>
 				<div className="p-4">
