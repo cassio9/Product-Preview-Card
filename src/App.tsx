@@ -23,7 +23,9 @@ function App() {
 					</p>
 					<div className="flex gap-4 mt-6 items-center ">
 						<p className="text-DarkCyan text-4xl font-Fraunces">$149.99</p>
-						<p className="text-DarkGrayishBlue line-through"> $169.99</p>
+						<del className="text-DarkGrayishBlue ">
+							<span className="sr-only">Old price: </span>$169.99
+						</del>
 					</div>
 					<button className="text-white bg-DarkCyan py-4 w-full rounded-xl flex gap-4 justify-center items-center my-4">
 						<span>
