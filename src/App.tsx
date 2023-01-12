@@ -1,17 +1,21 @@
 import "./App.css";
-import ProductImage from "./assets/image-product-desktop.jpg";
+import ProductImageDesktop from "./assets/image-product-desktop.jpg";
+import ProductImageMobile from "./assets/image-product-mobile.jpg";
 import Cart from "./assets/icon-cart.svg";
 function App() {
 	return (
 		<div className="bg-Cream p-4 font-Montserrat  flex justify-center items-center h-fit min-h-screen">
 			<div className="rounded-xl min-h-fit bg-white max-w-[350px] md:flex md:max-w-xl md:items-center">
-				<img
-					className="rounded-t-xl object-cover w-full h-[300px] md:w-1/2 md:h-full md:rounded-none md:rounded-l-lg"
-					src={ProductImage}
-					alt="Chanel Paris Gabrielle perfume"
-				/>
-				<div className="p-4">
-					<p className="text-DarkGrayishBlue  tracking-[0.4rem] text-sm font-[500] uppercase pt-2">
+				<picture className="md:flex-1">
+					<source media="(min-width: 768px)" srcSet={ProductImageDesktop} />
+					<img
+						className="rounded-t-xl md:w-full md:h-full md:rounded-none md:rounded-l-lg"
+						src={ProductImageMobile}
+						alt="Chanel Paris Gabrielle perfume"
+					/>
+				</picture>
+				<div className="px-4 md:flex-1">
+					<p className="text-DarkGrayishBlue  tracking-[0.4rem] text-sm font-[500] uppercase pt-4">
 						Perfume
 					</p>
 					<h1 className="font-bold font-Fraunces text-3xl text-[2rem] py-4 md:pr-6">
